@@ -9,6 +9,11 @@ body {
   position: relative;
   height: 100vh;
   background: linear-gradient(180deg, #343A3F 0%, #25282C 52.08%, #181A1D 100%);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  display: grid;
+
+/*   overflow-y: hidden; */
 }
 
 code {
