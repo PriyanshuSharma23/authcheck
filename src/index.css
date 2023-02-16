@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=PT+Sans&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,7 +16,9 @@ body {
   background-attachment: center;
   display: grid;
 
-/*   overflow-y: hidden; */
+  font-family: 'PT Sans', sans-serif;
+  
+  overflow: hidden;
 }
 
 code {

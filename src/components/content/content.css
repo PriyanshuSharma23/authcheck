@@ -1,7 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Luxurious+Roman'); */
 
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=PT+Sans&display=swap');
-
 
 
 .content {
@@ -13,7 +11,9 @@
   flex-direction: column;
   gap: 2rem;
 
-  font-family: 'PT Sans', sans-serif;
+  padding-inline: 1rem;
+
+  
   
 }
 
@@ -24,7 +24,7 @@
     /* height: auto; */
 }
 
-h1 {
+.status {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 500;
@@ -53,6 +53,12 @@ h1 {
         10px 0 80px rgba(255, 255, 255, 0.375);
 }
 
+.bound {
+  width: 17rem;
+    height: 17rem;
+  margin-inline: auto;
+}
+
 button {
 
     color: gold;
@@ -67,7 +73,6 @@ button {
     margin-left: 1rem;
     margin-right: 1rem; */
     text-align: center;
-    font-family: 'Luxurious Roman', cursive;
     box-shadow: 0 0 0 0;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -111,4 +116,153 @@ button {
   font-size: 1rem;
   font-family: 'JetBrains Mono', monospace;
   color: lightgreen;
+  font-style: underline;
+  cursor: pointer;
 }
+
+
+
+.popup {
+  position: fixed;
+  padding: 10px;
+   width: 90%;
+  left: 50%;
+  top: 80vh;
+  transform: translateX(-50%);
+  
+  /* From https://css.glass */
+  background: rgba(76, 76, 76, 0.81);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(76, 76, 76, 0.19);
+
+  overflow-y: scroll;
+
+  isolation: isolate;
+  text-align: left;
+
+  transition: all 0.5s ease-out;
+}
+
+.open-popup {
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.cross-btn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+
+  stroke: white;
+  fill: white;
+}
+
+.brandname {
+  text-align: left;
+  font-size: 2rem;
+background: -webkit-linear-gradient(270deg, #fdf6b4 0%, #FFD700 100%);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.product-name {
+  padding-block-start: 5px;
+  color: white;
+  font-size: 1.2rem
+}
+
+
+.product-image {
+  width: 60%;
+  max-width: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-description {
+   color: #ffffffaa 
+}
+
+.center {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+
+.leo-border-1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(63,249,220);
+  background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+  animation: spin3D 1.8s linear 0s infinite;
+}
+
+.leo-core-1 {
+  width: 100%;
+  height: 100%;
+  background-color: #37474faa;
+  border-radius: 50%;
+}
+
+.leo-border-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(251, 91, 83);
+  background: linear-gradient(0deg, rgba(251, 91, 83, 0.1) 33%, rgba(251, 91, 83, 1) 100%);
+  animation: spin3D 2.2s linear 0s infinite;
+}
+
+.leo-core-2 {
+  width: 100%;
+  height: 100%;
+  background-color: #1d2630aa;
+  border-radius: 50%;
+}
+
+.spinner-box {
+  width: 17rem;
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+small {
+  font-size: 0.8rem;
+  color: white;
+}
+
+@keyframes spin3D {
+  from {
+    transform: rotate3d(.5,.5,.5, 360deg);
+  }
+  to{
+    transform: rotate3d(0deg);
+  }
+}
+
+.error {
+  color: rgb(251, 91, 83);
+/*   display: flex;
+  align-items: center;
+  gap: 1rem; */
+}
+
